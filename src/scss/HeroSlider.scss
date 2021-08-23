@@ -1,0 +1,44 @@
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+    .arrow-btn{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background: none;
+        border: none;
+        
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.slide.active{
+    display: block;
+    opacity: 1;
+}

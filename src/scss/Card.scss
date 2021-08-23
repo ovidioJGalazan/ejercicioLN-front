@@ -1,0 +1,87 @@
+$white: #fff;
+$black: #333;
+
+$img-height: 150px;
+
+.card {
+    width: 240px;
+    min-width: 200px;
+    min-height: 300px;
+    
+    margin: 0 18px;
+    padding-bottom: 8px;
+    border: 1px solid $black;
+    border-radius: 12px;
+    
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    // cursor: pointer;
+
+    a{
+        text-decoration: none;
+    }
+
+    .card-img{
+        width:100%;
+        height: $img-height;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        object-fit: cover;
+    }
+
+    .description{
+        padding: 0 10px;
+        min-height: 150px;
+
+        .name{
+            color: $black;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+    
+        }
+
+        // Comienzo tarjeta beneficios
+        .discounts{
+            display: flex;
+    
+            .discount{
+                display: flex;
+            }
+            .discount:not(:last-child)::after{
+                display: block;
+                content:"";
+                margin: 3px 10px;
+                border-right: 1px solid $black;
+            }
+            #black{
+                color: black;
+            }
+            #premium{
+                color: blue;
+            }
+            #classic{
+                color: lightskyblue;
+            }
+        }
+
+        .distance{
+            margin-top: 4px;
+            align-self: flex-end;
+            .distance-text{
+                padding-left: 8px;
+            }
+        }
+        //Fin tarjeta beneficios
+
+        //Comienzo tarjeta codigo
+        .btn-code{
+            display: inline-block;
+            margin: 8px 0;
+            margin-left: 12px;
+        }
+        //Fin tarjeta código
+
+    }
+}

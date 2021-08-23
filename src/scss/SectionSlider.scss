@@ -1,0 +1,21 @@
+.section-slider{
+    // margin: 36px 0;
+    padding: 52px;
+    
+    .headline{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        margin: 36px 0;
+
+        .titles{
+            .title{
+                font-size: 32px;
+                font-weight: 600;
+                .subtitle{
+
+                }
+            }
+        }
+    }
+}
